@@ -2,6 +2,3 @@
 
 This file is a collection of all the work I do for my statistics class. Version control allows me to save and upload my work online in the case my computer dies and crashes in the semester
 #MGMT2340
-# MGMT2350UVUF18
-# MGMT2350UVUF18
-# MGMT2350UVUF18

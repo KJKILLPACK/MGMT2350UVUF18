@@ -1,0 +1,256 @@
+---
+title: "Exam 3"
+output: html_notebook
+---
+
+Question : 
+
+```{r}
+
+quantile(Exam3_Q30$Data, type = 6)
+median(Exam3_Q30$Data, type = 6)
+
+quantile(Exam3_Q30$Data, type = 4)
+median(Exam3_Q30$Data, type = 4)
+```
+
+
+ 
+```{r}
+
+boxplot(Exam3_Q5, xlab="Wait Time in Minutes)", names =c("Wait"), horizontal = TRUE)
+
+boxplot(Exam3_Q5, xlab="Wait Time (in Minutes)", names =c("Wait"), horizontal = TRUE, plot = FALSE, stats = FALSE)
+
+EnvStats::summaryStats(Exam3_Q5$Data)
+quantile(Exam3_Q5$Data, type = 6)
+
+
+iqr(Exam3_Q5$Data)
+30.5+(1.5*17)
+
+```
+
+
+
+```{r}
+
+median(Exam3_Q6$Data)
+
+stat(Exam3_Q6$Data)
+
+```
+
+
+
+Question 19
+
+Weighted mean to recompute the averages of student grades by rows
+
+
+```{r}
+weighted.mean(Exam3_Q19$`Row Average Score`, Exam3_Q19$`Number of Students`)
+
+mean(Exam3_Q19$`Row Average Score`)
+```
+
+
+Question 20
+
+
+CHECK QUESTION 20
+
+```{r}
+
+```
+
+
+Question 21
+
+Standard Deviation
+
+```{r}
+summary(Exam3_Q21$Scores)
+
+mean(Exam3_Q21$Scores)
+
+geoMean(Exam3_Q21$Scores)
+
+sd(Exam3_Q21$Scores)
+
+```
+
+Question 23
+
+Covariance of GRE and GPA
+
+```{r}
+cov(Exam3_Q23$GRE, Exam3_Q23$GPA)
+
+plot(Exam3_Q23, main = "Covariance of GRE and GPA", sub = "Covariance = 57.5")
+
+lines(lowess(Exam3_Q23))
+```
+
+Question 27
+
+Finding the mean of the values
+
+```{r}
+mean(Exam3_Q27$Data)
+
+geoMean(Exam3_Q27$Data)
+
+pop.geoMean(Exam3_Q27$Data)
+
+```
+
+Question 30 & 31 N=6
+
+
+
+```{r}
+sd(Exam3_Q30$Data)
+
+pop.sd(Exam3_Q30$Data)
+
+pop.var(Exam3_Q30$Data)
+```
+
+
+
+
+
+```{r}
+pop.sd(Exam3_Q5$Data)
+```
+
+Question 32
+
+Finding the 30th Percentile
+
+```{r}
+quantile(Exam3_Q32$Data, type = 6)
+
+Quantile(Exam3_Q32$Data, type = 6)
+
+quantile(Exam3_Q32$Data, probs = seq(0,1, by = 0.1), type = 6)
+```
+
+Question 33 & 34
+
+IQR & 75th %tile
+
+```{r}
+
+IQR(Exam3_Q33$Data, type = 6)
+
+quantile(Exam3_Q33$Data, type = 6)
+
+```
+
+Question 35 
+
+median of frequency chart
+
+```{r}
+median(c(rep(5,15),rep(15,75),rep(25,55),(rep(35,55))))
+```
+
+Question 37 
+
+Average score of a bowler based on sample (n=6)
+
+```{r}
+geoMean(Exam3_Q37$Scores)
+```
+
+Question 38 (use Exam3_Q33)
+
+sd of sample study hours by 6 students
+
+```{r}
+sd(Exam3_Q33$Data)
+"use top answer"
+pop.sd(Exam3_Q33$Data)
+```
+
+Question 40
+
+Mean Salary = 80,000 SD=6,000 what is SD with a 2% raise of all salaries
+
+```{r}
+median
+```
+
+Question 42 
+
+Geometric mean is greater than the arithmetic mean?
+
+```{r}
+geoMean(Exam3_Q33$Data)
+
+mean(Exam3_Q33$Data)
+
+```
+
+Question 43
+
+Addidas average growthrate
+
+```{r}
+
+killpack.return.calc(Exam3_Q43$Growth)
+
+```
+
+Question #48 (same data as #5)
+
+find IQR
+
+```{r}
+IQR(Exam3_Q5$Data, type = 6)
+```
+
+Question #50
+
+Median over Philidelphia temperatures
+
+```{r}
+median(Exam3_Q50$Temperture)
+
+median
+```
+
+
+
+
+
+```{r}
+KillpackStatsPackage::killpack.return.calc(Exam3_Q43$Growth)
+pop.sd(Exam3_Q50$Temperture)
+pop.var(Exam3_Q50$Temperture)
+```
+
+
+
+```{r}
+plot(mlb_elo$score1, mlb_elo$score2, xlab = "Home-Team Score", ylab = "Visiting-Team Score", main = "Score Analasys")
+
+lines(lowess(mlb_elo$score1, mlb_elo$score2))
+
+plot(mlb_elo$score1, mlb_elo$score2, type = "n")
+```
+
+
+
+
+```{r}
+IQR(Exam3_Q33$Data, type = 6)
+```
+
+
+
+
+
+

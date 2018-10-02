@@ -1,0 +1,41 @@
+---
+title: "Exam 2"
+output:
+  html_notebook: default
+  pdf_document: default
+  word_document: default
+---
+
+
+```{r}
+plot(E2Q8$'y' ~ E2Q8$'x', "col"="violet", ylab="Y", xlab="X", main = "Question 8", sub = "The Chart Shows A Negative Relationship")
+
+lines(E2Q8$'y' ~ E2Q8$'x', "col"="gray")
+```
+```{r}
+hist(E2Q11$`Raw scores`, breaks = 5, col = "green", main = "Question 11", xlab = "Scores", ylab = "Frequency", freq = TRUE)
+
+summaryStats(E2Q11)
+```
+
+```{r}
+hist(E2Q27$Scores, breaks = c(16,30,44,58,72,86), right = FALSE, main = paste("Histogram of Question 27"), freq = TRUE, col = "Violet", xlab = "Scores", plot = TRUE)
+
+hist(E2Q27$Scores, breaks = c(16,30,44,58,72,86), right = FALSE, main = "Question 27", freq = TRUE, col = "Violet", xlab = "Scores", plot = FALSE)
+
+
+summary(E2Q27$Scores)
+
+summaryStats(E2Q27$Scores, main = "Stats")
+
+```
+
+
+```{r}
+hist(E2Q50$`Sales price (in $1,000s)`, breaks = c(115,140,165,190,215,240), right = FALSE, main = paste("Histogram of Question 50"), freq = TRUE, col = "yellow", border = "black",  xlab = "Sales price (in $1,000s)", plot = TRUE, labels = TRUE)
+
+hist(E2Q50$`Sales price (in $1,000s)`, breaks = c(115,140,165,190,215,240), right = FALSE, freq = TRUE, plot = FALSE)
+
+
+summaryStats(E2Q50)
+```

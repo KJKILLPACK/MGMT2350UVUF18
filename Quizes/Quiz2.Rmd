@@ -1,0 +1,75 @@
+---
+title: "QuizSep8"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+hist(MutualFunds$'Mutual funds', breaks = 5, main = "Histogram" , "col"="violet", xlab = "Mutual Funds")
+```
+
+
+```{r}
+stem(BodyTemperature$`Body temperature`, scale = 1 )
+```
+
+```{r}
+hist(Question6$Dataset, breaks = 5, col = "blue", xlab = "Dataset", main = "Dataset")
+
+
+```
+
+```{r}
+hist(Ratings$'Satisfaction', main = "Histogram" , "col"="violet", xlab = "Ratings")
+
+```
+
+
+
+```{r}
+plot(PolygonQ6$'y' ~ PolygonQ6$'x', "col"="red", ylab="Relative Frequency", xlab="Dataset")
+
+lines("col"="green", PolygonQ6$'y' ~ PolygonQ6$'x')
+```
+
+
+```{r}
+stem(DatasetQ7$Dataset, scale = 1)
+```
+
+
+```{r}
+hist(Question8$'Dataset', breaks = 6 , main = "Histogram" , "col"="violet", xlab = "Ratings")
+
+hist(Question8$'Dataset', breaks = c(3,5,7,9,11,13,15), freq = TRUE,
+     main = "WRONG histogram", col = "blue", bor = "white")
+```
+
+
+
+```{r}
+mean(Quiz3Q9$Data)
+
+sd(Quiz3Q9$Data)
+
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

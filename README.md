@@ -4,3 +4,4 @@ This file is a collection of all the work I do for my statistics class. Version 
 #MGMT2340
 # MGMT2350UVUF18
 # MGMT2350UVUF18
+# MGMT2350UVUF18

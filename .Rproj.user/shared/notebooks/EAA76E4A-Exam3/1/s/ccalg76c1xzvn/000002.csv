@@ -1,0 +1,24 @@
+"0","```r
+summary(Exam3_Q21$Scores)
+```"
+"1","   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    168     172     174     178     185     190 
+"
+"0","```r
+mean(Exam3_Q21$Scores)
+```"
+"1","[1] 178
+"
+"0","```r
+geoMean(Exam3_Q21$Scores)
+```"
+"1","[1] 177.822
+"
+"0","```r
+sd(Exam3_Q21$Scores)
+```"
+"1","[1] 8.640988
+"
+"0","```r
+weighted_average=weighted.mean(Exam3_Q21$Scores,c(1,1,1,1,1,1,1),na.rm=TRUE)
+```"

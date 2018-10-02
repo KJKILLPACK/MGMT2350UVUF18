@@ -1,0 +1,7 @@
+"0","```r
+rr=ts(Growth_Value$Value3)
+SharpeRatio(rr, Rf=.02, FUN=\"StdDev\")
+```"
+"1","                                      [,1]
+StdDev Sharpe (Rf=2%, p=95%): 0.3012059184
+"

@@ -1,0 +1,40 @@
+"0","jmv::descriptives("
+"0","  data = BRHGRs,"
+"0","  vars = ""score1"","
+"0","  hist = TRUE,"
+"0","  freq = TRUE,"
+"0","  mean = TRUE,"
+"0","  sum = TRUE,"
+"0","  mode = TRUE,"
+"0","  quart = TRUE"
+"0",")"
+"1","
+ DESCRIPTIVES
+
+ Descriptives                  
+ ───────────────────────────── 
+                      score1   
+ ───────────────────────────── 
+   N                    9302   
+   Missing                 6   
+   Mean                 4.96   
+   Median               4.00   
+   Mode                 4.00   
+   Sum                 46183   
+   Minimum              0.00   
+   Maximum              29.0   
+   25th percentile      3.00   
+   50th percentile      4.00   
+   75th percentile      7.00   
+ ───────────────────────────── 
+
+
+ FREQUENCIES
+
+ Frequencies of score1 
+ ───────────────────── 
+  
+ ───────────────────── 
+ ───────────────────── 
+
+"

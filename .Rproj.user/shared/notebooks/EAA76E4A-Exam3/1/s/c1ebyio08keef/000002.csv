@@ -1,0 +1,9 @@
+"0","```r
+cov(Exam3_Q23$GRE, Exam3_Q23$GPA)
+```"
+"1","[1] 57.5
+"
+"0","```r
+plot(Exam3_Q23, main = \"Covariance of GRE and GPA\", sub = \"Covariance = 57.5\")
+lines(lowess(Exam3_Q23))
+```"

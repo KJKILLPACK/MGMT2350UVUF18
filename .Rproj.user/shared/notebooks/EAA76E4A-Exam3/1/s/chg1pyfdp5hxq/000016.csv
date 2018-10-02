@@ -1,0 +1,1 @@
+"0","lines(lowess(mlb_elo$score1, mlb_elo$score2))"

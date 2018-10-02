@@ -1,0 +1,5 @@
+"0","```r
+MeanAD(Growth_Value$Growth, FUN = mean, na.rm = FALSE)
+```"
+"1","[1] 13.5604
+"

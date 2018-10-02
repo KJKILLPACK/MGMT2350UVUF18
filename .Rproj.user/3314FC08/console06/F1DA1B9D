@@ -1,0 +1,100 @@
+[KKadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../.CFUserTextEncoding[m
+	[31m../.FamilySearchIndexing/[m
+	[31m../.RData[m
+	[31m../.Rapp.history[m
+	[31m../.Rhistory[m
+	[31m../.Trash/[m
+	[31m../.adobe/[m
+	[31m../.bash_history[m
+	[31m../.bash_sessions/[m
+	[31m../.cups/[m
+	[31m../.gitconfig[m
+	[31m../.lesshst[m
+	[31m../.rstudio-desktop/[m
+	[31m../.subversion/[m
+	[31m../.viminfo[m
+	[31m../Applications/[m
+	[31m../Creative Cloud Files/[m
+	[31m../Desktop/[m
+	[31m../Documents/[m
+	[31m../Downloads/[m
+	[31m../ELO Sports Indexings and Analysis/[m
+	[31m../Killpack.pop.stat/[m
+	[31m../Killpack.pop.stats/[m
+	[31m../KillpackStatsPackage 2/[m
+	[31m../KillpackStatsPackage/[m
+	[31m../KillpackStatsPackage_0.1.0.tgz[m
+	[31m../Library/[m
+	[31m./[m
+	[31m../Movies/[m
+	[31m../Music/[m
+	[31m../NFL+ANALYTICAL+KILLPACK/[m
+	[31m../Pictures/[m
+	[31m../Public/[m
+	[31m../RedSox&MLB+Analysis/[m
+	[31m../jobq.dat[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ echo "# MGMT 2350[K[K40[1@"[C[C[C[C[C[C[C[C[C" >> README.md
+> 
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git init
+Initialized empty Git repository in /Users/kaden/MGMT2340(managerial_statistics)/.git/
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add README>[K.md
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add MGMT2340(managerial_statisti cs)[C.Rproj
+bash: syntax error near unexpected token `('
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add Chapter RMD's
+> 
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add Exams
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add Quiz'z
+> 
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add .RData
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add .RH[Khistory
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git commit -m 'first commit[1P[1@"[C[C[C[C[C[C[C[C[C[C[C[C"
+[master (root-commit) 807e4fd] first commit
+ 8 files changed, 2184 insertions(+)
+ create mode 100644 .RData
+ create mode 100644 .Rhistory
+ create mode 100644 Exams/Exam 2.nb.html
+ create mode 100644 Exams/Exam2.Rmd
+ create mode 100644 Exams/Exam2.nb.html
+ create mode 100644 Exams/Exam3.Rmd
+ create mode 100644 Exams/Exam3.nb.html
+ create mode 100644 README.md
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git remod[Kte add https://github.com/KJ KILLPACK/KillpackStats.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+	[31mChapter RMD's/[m
+	[31mMGMT2340(managerial_statistics).Rproj[m
+	[31mQuiz'z/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;~/MGMT2340(managerial_statistics)Kadens-MBP-2:MGMT2340(managerial_statistics)  kaden$ git add /Rpo[Kroj[K[K[K[K[K[K.Rproj.user/

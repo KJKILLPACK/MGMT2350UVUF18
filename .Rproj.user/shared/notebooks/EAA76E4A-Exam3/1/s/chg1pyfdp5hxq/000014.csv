@@ -1,1 +1,0 @@
-"0","plot(mlb_elo$score1, mlb_elo$score2, xlab = ""Home-Team Score"", ylab = ""Visiting-Team Score"", main = ""Score Analasys"")"

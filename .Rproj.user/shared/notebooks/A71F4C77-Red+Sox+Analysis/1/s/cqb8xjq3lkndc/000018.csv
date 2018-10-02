@@ -1,5 +1,0 @@
-"0","bos_eloHOME <- subset(mlb_eloFULL, team1==""BOS"", select = c(team2, pitcher1, score1, score2) )"
-"0","CsBRhg <- subset(bos_eloHOME, pitcher1==""Chris Sale"", select = c(team2, pitcher1, score1, score2))"
-"0","bos_eloAWAY <- subset(mlb_eloFULL, team2==""BOS"", select = c(team1, pitcher2, score1, score2) )"
-"0","CsBRag <- subset(bos_eloAWAY, pitcher2==""Chris Sale"", select = c(team1, pitcher2, score1, score2))"
-"0","boxplot(CsBRhg$score2, horizontal = TRUE, names = ""Home Games"", main = ""Chris Sale"", sub = ""Runs Allowed at Fenway"")"

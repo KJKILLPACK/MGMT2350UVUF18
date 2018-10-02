@@ -1,4 +1,0 @@
-"0","library(fivethirtyeight)"
-"0","# tidyverse includes ggplot2, tibble, tidyr, readr, purrr, dplyr:"
-"0","library(tidyverse)"
-"0","library(knitr)"

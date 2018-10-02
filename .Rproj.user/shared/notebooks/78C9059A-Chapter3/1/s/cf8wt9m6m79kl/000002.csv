@@ -1,5 +1,0 @@
-"0","```r
-options(scipen=100)
-options(digits=2)
-stat.desc(Growth_Value, norm=TRUE)
-```"

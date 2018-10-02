@@ -1,1 +1,0 @@
-"0","boxplot(c(CSHGPA, CSAGPA), horizontal = TRUE, names = c(""Home Games"", ""Away Games""), main = ""Chris Sale"", sub = ""Runs Allowed in a Game as Starter"", notch = TRUE)"

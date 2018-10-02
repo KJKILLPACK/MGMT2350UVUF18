@@ -1,7 +1,0 @@
-"0","MLBTeamGames <- data.frame(c(mlb_eloFULL$team1, mlb_eloFULL$team2))"
-"0","BOSRED <-   MLBTeamGames[MLBTeamGames==""BOS""]"
-"0","length(BOSRED)"
-"1","[1]"
-"1"," 18606"
-"1","
-"

@@ -1,1 +1,0 @@
-"0","boxplot(BRHGRs$score1, BRHGRsA$score2, horizontal = TRUE, names =  c(""Runs"", ""Runs Allowed""), main = ""Boston Red Sox"", sub = ""Runs in a game (1901-2018)"", notch = TRUE)"

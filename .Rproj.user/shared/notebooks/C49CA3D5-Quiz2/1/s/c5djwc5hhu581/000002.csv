@@ -1,4 +1,0 @@
-"0","hist(MutualFunds$'Mutual funds', breaks = 5, main = ""Histogram"" , ""col""=""violet"", xlab = ""Mutual Funds"")"
-"2","Error in hist(MutualFunds$""Mutual funds"", breaks = 5, main = ""Histogram"",  : 
-  object 'MutualFunds' not found
-"

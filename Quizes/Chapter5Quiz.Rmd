@@ -1,0 +1,271 @@
+---
+title: "Chapter 5 Quiz"
+output: html_notebook
+---
+
+
+```{r}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+###Question 1
+
+Assume that X is a Poisson random variable with μ = 28. Calculate the following probabilities.
+
+P(X ≤ 18)
+
+P(X = 20)
+
+P(X > 22)
+
+P(24 ≤ X ≤ 32)
+
+
+```{r}
+print("less than or equal to")
+ppois(18, lambda = 28)
+print("equal to the value")
+dpois(20, lambda = 28)
+
+print("everything thats greater than 22")
+1-(dpois(22, lambda = 28))
+
+print("P(24 ≤ X ≤ 32)")
+(ppois(32, lambda = 28))-(ppois(24, lambda = 28))
+
+```
+
+###Question 2
+
+You are considering two mutual funds as an investment. The possible returns for the funds are dependent on the state of the economy and are given in the accompanying table.
+
+    State of the economy     fund 1   fund 2    likelyhood
+    Good                      36%      20%         12%
+    Fair                      11%      17%         43%
+    Poor                      -9%     -17%         45%
+
+a. Find the expected value and the standard deviation of returns for Fund 1. (Round intermediate calculations to at least 4 decimal places and final answers to 2 decimal places.)
+
+b. Find the expected value and the standard deviation of returns for Fund 2. (Round intermediate calculations to at least 4 decimal places and final answers to 2 decimal places.)
+
+c. Which fund will you pick if you are risk averse?
+
+```{r}
+print("A. Fund 1 Mean, VAR, SD")
+#Fund 1
+wm.a=w.mean(c(.36,.11,-.09),c(.12,.43,.45))
+wsd.a=w.sd(c(.36,.11,-.09),c(.12,.43,.45))
+wva.a=w.var(c(.36,.11,-.09),c(.12,.43,.45))
+
+
+wm.a
+wva.a
+wsd.a
+
+print("B. Fund 2 Mean, VAR, SD")
+#Fund 2
+wm.b=w.mean(c(.2,.17,-.17),c(.12,.43,.45))
+wsd.b=w.sd(c(.2,.17,-.17),c(.12,.43,.45))
+wva.b=w.var(c(.2,.17,-.17),c(.12,.43,.45))
+
+
+wm.b
+wva.b
+wsd.b
+
+print("C. Fund 1 bc/ higher expected return, less loss if its bad, and less deviation meaning its more consistant")
+
+```
+
+
+###Question 3
+
+Suppose 53% of recent college graduates plan on pursuing a graduate degree. Twelve recent college graduates are randomly selected.
+
+a. What is the probability that no more than three of the college graduates plan to pursue a graduate degree? (Do not round intermediate calculations. Round your final answers to 4 decimal places.)
+
+b. What is the probability that exactly seven of the college graduates plan to pursue a graduate degree? (Do not round intermediate calculations. Round your final answers to 4 decimal places.)
+
+c. What is the probability that at least six but no more than eleven of the college graduates plan to pursue a graduate degree? (Do not round intermediate calculations. Round your final answers to 4 decimal places.)
+
+
+```{r}
+#dbinom(x,n,p) (X = x)
+#pbinom(x,n,p) (X ≤ x)
+
+#A
+pbinom(3,12,.54)
+
+#B
+dbinom(7,12,.54)
+
+#C
+pbinom(11,12,.54)-pbinom(5,12,.54)
+```
+
+
+###Question 4
+
+An analyst has developed the following probability distribution for the rate of return for a common stock.
+
+ 
+    Scenario    Probability     Rate of Return
+       1          0.23             -10%
+       2          0.42               3%
+       3          0.35              16%
+    
+a. Calculate the expected rate of return. (Round intermediate calculations to at least 4 decimal places. Round your answer to 2 decimal places.)
+
+```{r}
+print("A: Expected Rate of Return")
+#Fund
+wm.c=w.mean(c(-.1,.03,.16),c(.23,.42,.35))
+
+wm.c
+```
+
+b. Calculate the variance and the standard deviation of this probability distribution. (Use the percentage values for your calculations (for example 10% not 0.10). Round intermediate calculations to at least 4 decimal places. Enter your answer as a percentage rounded to 2 decimal places.)
+```{r}
+print("B: VAR & %, SD & %")
+#Fund
+wsd.c=w.sd(c(-.1,.03,.16),c(.23,.42,.35))
+wva.c=w.var(c(-.1,.03,.16),c(.23,.42,.35))
+
+wva.c
+(wva.c)*100
+wsd.c
+(wsd.c)*100
+```
+
+
+###Question 5
+
+India is the second most populous country in the world, with a population of over 1 billion people. Although the government has offered various incentives for population control, some argue that the birth rate, especially in rural India, is still too high to be sustainable. A demographer assumes the following probability distribution for the household size in India.
+
+    Household Size      Probability
+    1                   0.03
+    2                   0.11
+    3                   0.15
+    4                   0.24
+    5                   0.16
+    6                   0.16
+    7                   0.11
+    8                   0.04
+
+    
+a. What is the probability that there are less than 5 members in a household in India? (Round your answer to 2 decimal places.)
+
+
+
+```{r}
+print("1   2    3    4    5    6    7    8    ")
+cumsum(Quiz5Q5$frequency)
+```
+
+
+b. What is the probability that there are 5 or more members in a household in India? (Round your answer to 2 decimal places.)
+
+```{r}
+1-.53
+```
+
+
+c. What is the probability that the number of members in a household in India is strictly between 2 and 5? (Round your answer to 2 
+
+```{r}
+0.53-0.14
+```
+
+###Question 6
+
+Consider the following discrete probability distribution.
+   
+    x        -40   -10   10   20
+    P(X=x)   0.37  0.15      0.12
+    
+a. Complete the probability distribution. (Round your answer to 2 decimal places.) P(X=10)
+
+```{r}
+1-sum(c(0.37,0.15,0.12))
+```
+
+    x        -40   -10   10   20
+    P(X=x)   0.37  0.15 0.36 0.12
+
+
+b. What is the probability that the random variable X is positive? (Round your answer to 2 decimal places.)
+
+```{r}
+0.36+0.12
+```
+
+
+c. What is the probability that the random variable X is greater than −35? (Round your answer to 2 decimal places.)
+
+```{r}
+0.15+0.36+0.12
+```
+
+
+d. What is the probability that the random variable X is less than 20? (Round your answer to 2 decimal places.)
+
+```{r}
+1-0.12
+```
+
+
+###Question 6
+
+Calculate the mean, the variance, and the standard deviation of the following discrete probability distribution. (Negative values should be indicated by a minus sign. Round intermediate calculations to at least 4 decimal places. Round your final answers to 2 decimal places.)
+
+
+    x         -33      -26     -9      -5
+    P(X=x)    0.47     0.29    0.19    0.05
+
+```{r}
+print("A. Fund 1 Mean, VAR, SD")
+#Fund 1
+wm.q6a=w.mean(c(-33, -26, -9, -5),c(0.47, 0.29, 0.19, 0.05))
+wsd.q6a=w.sd(c(-33, -26, -9, -5),c(0.47, 0.29, 0.19, 0.05))
+wva.q6a=w.var(c(-33, -26, -9, -5),c(0.47, 0.29, 0.19, 0.05))
+
+
+wm.q6a
+wva.q6a
+wsd.q6a
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

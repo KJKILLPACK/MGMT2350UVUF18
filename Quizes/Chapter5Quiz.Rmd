@@ -236,10 +236,95 @@ wva.q6a
 wsd.q6a
 ```
 
+###Question 8
+
+Let X represent a binomial random variable with n = 170 and p = 0.6. Find the following probabilities. (Do not round intermediate calculations. Round your final answers to 4 decimal places.)
+
+    P(X ≤ 100)
+    P(X > 100)
+    P(150 ≤ X ≤ 115)
+    P(X = 90)
+
+```{r}
+#dbinom(x,n,p) (X = x)
+#pbinom(x,n,p) (X ≤ x)
+
+#A
+print("P(X ≤ 100)")
+pbinom(100,170,.60)
+```
+
+```{r}
+#B
+print("P(X > 100)")
+1-pbinom(100,170,.60)
+```
+
+```{r}
+#C
+print("P(150 ≤ X ≤ 115)")
+pbinom(150,170,.60)-pbinom(115,170,.60)
+```
+
+```{r}
+#D
+print("P(X = 90)")
+dbinom(90,170,.60)
+```
 
 
+###Question 9
 
+Consider the following discrete probability distribution.
 
+    x           15     22    34    40
+    P(X=x)    0.15   0.54  0.21  0.10
+    
+
+a. Is this a valid probability distribution?
+
+```{r}
+sum(c(0.15,0.54,0.21,0.1))
+print("Yes it adds to 1")
+```
+
+b. What is the probability that the random variable X is less than 39? (Round your answer to 2 decimal places.)
+
+```{r}
+0.21+0.54+0.15
+#or
+1-.1
+```
+
+c. What is the probability that the random variable X is between 9 and 30? (Round your answer to 2 decimal places.)
+
+```{r}
+0.15+0.54
+```
+
+d. What is the probability that the random variable X is greater than 18? (Round your answer to 2 decimal places.)
+
+```{r}
+1-0.15
+```
+
+###Question 10
+
+A basketball player is fouled while attempting to make a basket and receives two free throws. The opposing coach believes there is a 57% chance that the player will miss both shots, a 22% chance that he will make one of the shots, and a 21% chance that he will make both shots.
+
+a. Construct the appropriate probability distribution. (Round your answers to 2 decimal places.)
+
+    0    57%
+    1    22%
+    2    21%
+
+b. What is the probability that he makes no more than one of the shots? (Round your answer to 2 decimal places.)
+
+77%
+
+c. What is the probability that he makes at least one of the shots? (Round your answer to 2 decimal places.)
+
+43%
 
 
 
